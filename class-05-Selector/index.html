@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery CDN Setup</title>
+
+    <style>
+        /* Write the cSS Code Here*/
+    </style>
+
+</head>
+<body>
+
+   <!-- Write the HTML here -->
+   <!-- 
+    | **Selector**              | **Description (বাংলা)**                                                                            |
+    |---------------------------|---------------------------------------------------------------------------------------------------|
+    | $("#id")                   | নির্দিষ্ট `id` এর ভিত্তিতে একটি এলিমেন্ট সিলেক্ট করে।                                              |
+    | $(".class")                | নির্দিষ্ট `class` এর ভিত্তিতে এক বা একাধিক এলিমেন্ট সিলেক্ট করে।                                   |
+    | $("p.class")               | নির্দিষ্ট `class` এর ভিত্তিতে সব `<p>` এলিমেন্ট সিলেক্ট করে।                                       |
+    | $("p:first")               | প্রথম `<p>` এলিমেন্ট সিলেক্ট করে।                                                                 |
+    | $("p:last")                | শেষ `<p>` এলিমেন্ট সিলেক্ট করে।                                                                   |
+    | $("tr:even")               | সম (even) নম্বরের `<tr>` এলিমেন্ট সিলেক্ট করে।                                                    |
+    | $("tr:odd")                | বিজোড় (odd) নম্বরের `<tr>` এলিমেন্ট সিলেক্ট করে।                                                  |
+    | $("ul li:eq(6)")           | নির্দিষ্ট `<ul>` এর মধ্যে ৭ম (০ থেকে গণনা) `<li>` এলিমেন্ট সিলেক্ট করে।                           |
+    | $("[attribute]")           | নির্দিষ্ট অ্যাট্রিবিউট (যেমন: `href`) থাকা সব এলিমেন্ট সিলেক্ট করে।                                |
+    | $("[attribute='value']")    | নির্দিষ্ট অ্যাট্রিবিউট ও তার মান (যেমন: `target="_blank"`) এর ভিত্তিতে এলিমেন্ট সিলেক্ট করে।     |
+-->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        // JavaScript/JQuery কোড এখানে লিখতে পারেন
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("ul li:eq(6)").hide(1000);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
