@@ -7,17 +7,26 @@
 
     <style>
         /* Write the cSS Code Here*/
+        .box {
+            height: 200px;
+            width: 200px;
+            background: green;
+        }
     </style>
 
 </head>
 <body>
 
    <!-- Write the HTML here -->
+    <div class="box"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script>
         // JavaScript/JQuery কোড এখানে লিখতে পারেন
+        $(document).ready(function(){
+            $('.box').hide(3000);
+        });
     </script>
 
 </body>
