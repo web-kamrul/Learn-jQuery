@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        /* Write the cSS Code Here*/
+        h2 {
+            border: 1px solid red;
+            padding: 20px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <button>Click Me</button>
+    <h2>Hellow world</h2>
+
+   <!-- Write the HTML here -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        // JavaScript/JQuery কোড এখানে লিখতে পারেন
+        $(document).ready(function(){
+            $('button').on('click',function(){
+                alert("Hello world");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('h2').on({
+                'click': function(){
+                    console.log("click");
+                },
+                'mouseenter': function(){
+                    console.log("Enter");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
