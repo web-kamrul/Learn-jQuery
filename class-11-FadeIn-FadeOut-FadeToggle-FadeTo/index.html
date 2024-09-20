@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        /* Write the cSS Code Here*/
+        .box1 {
+            height: 200px;
+            width: 200px;
+            background: rgb(0, 183, 255);
+            display: none;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background: rgb(137, 255, 2);
+        }
+
+        .box3 {
+            height: 200px;
+            width: 200px;
+            background: rgb(2, 7, 255);
+        }
+
+        .box4 {
+            height: 200px;
+            width: 200px;
+            background: rgb(255, 0, 0);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box1"></div> 
+    <button class="btn-box1">Touch Me</button><br>
+    <div class="box2"></div> 
+    <button class="btn-box2">Touch Me</button><br>
+    <div class="box3"></div> 
+    <button class="btn-box3">Touch Me</button><br>
+    <div class="box4"></div> 
+    <button class="btn-box4">Touch Me</button><br>
+    
+
+    
+
+    <!-- Write the HTML here -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('button.btn-box1').click(function(){
+                $('.box1').fadeIn('slow');
+            });
+
+            $('button.btn-box2').click(function(){
+                $('.box2').fadeOut('slow');
+            });
+
+            $('button.btn-box3').click(function(){
+                $('.box3').fadeToggle('slow');
+            });
+
+            $('button.btn-box4').click(function(){
+                $('.box4').fadeTo('slow', 0.4);
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        /* Write the cSS Code Here*/
+    </style>
+
+</head>
+<body>
+
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi optio eligendi quos iste nostrum, beatae ea vitae aspernatur necessitatibus dignissimos, doloribus laudantium sed praesentium provident, exercitationem id amet neque! Nobis atque tempore iusto, nisi fugit dolor dolorum libero, officia deserunt inventore doloremque repellat a explicabo beatae repellendus odio soluta consequuntur quaerat eligendi exercitationem nemo iure? Repudiandae adipisci voluptas libero explicabo dolores, tempora aliquid voluptate minima quod iure hic eligendi consequatur, harum numquam dolore quam cupiditate, optio in nisi architecto rem. Cum totam iste dolorem esse, officiis expedita eligendi explicabo ut eos amet quidem placeat repellendus accusantium ex assumenda, consequatur unde.</p>
+        <button class="hide">Hide me</button>
+        <button class="show">Show me</button>
+        <button class="toogle">  Hide and Show</button>
+    </div>
+
+    
+
+   <!-- Write the HTML here -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        // JavaScript/JQuery কোড এখানে লিখতে পারেন
+
+        /*
+        $(document).ready(function(){
+
+            $('.hide').click(function(){
+                $('.main > p').hide(4000);
+            });
+
+            $('.show').click(function(){
+                $('.main > p').show(4000);
+            });
+
+        });
+
+        */
+        $(document).ready(function(){
+
+            $('.toogle').click(function(){
+                $('.main > p').toggle(400);
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
